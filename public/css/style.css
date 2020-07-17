@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background: lightgrey
+}
+
+.main-content>ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+#list-all-heroes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  list-style: none;
+}
+
+.img {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100px;
+  height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  /* display: flex;
+  flex-wrap: wrap; */
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: black;
+}
+
+nav>ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav>ul>li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px;
+  margin-top: 15px;
+  color: whitesmoke;
+}
+
+a {
+  margin-top: 15px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  color: black;
+  background: whitesmoke;
+  border: 1px solid;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+  transition-property: color, background;
+  border-radius: 15px solid black;
+  padding: 0.3rem 0.5rem;
+  width: 20vh;
+  justify-content: center;
+  align-content: center;
+}
+
+#heroe-details-popup.is-hidden {
+  opacity: 0;
+  z-index: -1;
+}
+
+h3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.form-add {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+input {
+  margin: 10px;
+}
+
+.all {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px black;
+  margin: 20px;
+  margin-bottom: 10px;
+  height: 350px;
+}
+
+.publisher {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  order: 1;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.infos-heroe {
+  height: 300px;
+  width: 300px;
+  background: blue;
+  z-index: 11;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* POPUP */
+
+#heroe-details-popup.is-hidden {
+  opacity: 0;
+  z-index: -1;
+}
+
+#heroe-details-popup {
+  height: 100vh;
+  width: 50vw;
+  margin-top: 25%;
+  margin-left: 25%;
+  background: lightgray;
+  opacity: 0.7;
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light);
+  transition: opacity 0.3s linear;
+}
+
+#heroe-details-popup .btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+div>.one {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-items: center;
+}
+
+div>.publisher {
+  text-align: center;
+}
+
+.filt {
+  display: flex;
+  flex-wrap: wrap;
+}

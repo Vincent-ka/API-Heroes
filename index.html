@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="public/js/app.js"></script>
+    <title>Heroes API</title>
+</head>
+
+<body>
+    <!-- <nav>
+        <li><a href="/">All heroes</a></li>
+        <li><a href="/create-heroes">Create heroes</a></li>
+    </nav> -->
+
+    <div id="heroe-details-popup" class="is-hidden">
+        <button id="close-heroe-popup" class="btn">x</button>
+    </div>
+    <header>
+        <h1 class="title">API Héros</h1>
+    </header>
+
+
+    <div class="form-add" id="form-post-user">
+        <input id="name" class="input" name="name" type="text" class="input" placeholder="first name" />
+        <input id="publisher" class="input" name="publisher" type="text" placeholder="publisher" />
+        <label for="female" class="label">Female</label>
+        <input id="female" type="radio" name="gender" value="Female" checked />
+        <label for="male" class="label">Male</label>
+        <input id="male" type="radio" name="gender" value="Male" />
+        <button class="btn" id="hero_name">Add</button>
+    </div>
+
+    <div class="filter">
+        <label class="filt" for="input-tri-nom">Trier par nom :</label>
+        <input type="text" id="input-tri-nom" placeholder="trier par nom" />
+
+        <label class="filt" for="input-tri-publisher">Trier par publisher :</label>
+        <input type="text" id="input-tri-publisher" placeholder="trier par publisher" />
+    </div>
+    <main id="main-content">
+        <ul id="list-all-heroes"></ul>
+    </main>
+</body>
+
+</html>
